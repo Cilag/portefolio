@@ -8,6 +8,10 @@ import { SiMysql } from "react-icons/si";
 import { DiWindows } from "react-icons/di";
 import { DiLinux } from "react-icons/di";
 import { motion} from "framer-motion";
+import { DiCisco } from "react-icons/di";
+import { DiGit } from "react-icons/di";
+import { DiUnitySmall } from "react-icons/di";
+import { DiNginx } from "react-icons/di";
 
 const iconVariants = (duration) => ({
     initial: {y: -7},
@@ -94,9 +98,37 @@ const Technologies = () => {
             className="rounded-2xl border-4 border-neutral-800 p-4">
                 <DiLinux className="text-9xl text-neutral-100" />
             </motion.div>
+            <motion.div
+            variants={iconVariants(6)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiCisco className="text-9xl text-neutral-100" />
+            </motion.div>
+            <motion.div
+            variants={iconVariants(7)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiGit className="text-9xl text-neutral-100" />
+            </motion.div>
+            <motion.div
+            variants={iconVariants(5)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiUnitySmall className="text-9xl text-neutral-100" />
+            </motion.div>
+            <motion.div
+            variants={iconVariants(3)}
+            initial="initial"
+            animate="animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <DiNginx className="text-9xl text-neutral-100" />
+            </motion.div>
         </motion.div>
     </div>
-  )
+  ) 
 }
 
 export default Technologies

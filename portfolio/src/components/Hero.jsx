@@ -1,5 +1,5 @@
 import { HERO_CONTENT } from '../constants'
-import profilePic from '../assets/kevinRushProfile.jpg'
+import profilePic from '../assets/guillaumeProfile.jpg'
 import { motion} from 'framer-motion'
 
 const container = (delay) => ({
@@ -12,7 +12,7 @@ const container = (delay) => ({
 });
 const Hero = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35">
+    <div className="border-b border-neutral-500 pb-4 lg:mb-35">
         <div className="flex flex-wrap">
             <div className="w-full lg:w-1/2">
                 <div className="flex flex-col items-center lg:items-start">
@@ -28,7 +28,7 @@ const Hero = () => {
                     variants={container(0.5)}
                     initial="hidden"
                     animate="visible"
-                    className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 bg-clip-text text-3xl tracking-tight text-transparent"
+                    className="bg-gradient-to-r from-indigo-500 via-sky-500 to-emerald-500 bg-clip-text text-4xl tracking-tight text-transparent"
                     >
                       Recherche Alternance en infrastructure système et réseau
                     </motion.span>
@@ -38,7 +38,7 @@ const Hero = () => {
                     animate="visible"
                     className="my- max-w-xl py-6 font-light tracking-tighter"
                     >
-                    {HERO_CONTENT}
+                      <p className="mb-4 text-neutral-200 text-2xl">{HERO_CONTENT}</p>
                     </motion.p>
                 </div>
             </div>
@@ -48,7 +48,7 @@ const Hero = () => {
                     initial={{x: 100, opacity: 0}} 
                     animate={{x: 0, opacity: 1}}
                     transition={{duration: 1, delay: 1.2}}
-                    src={profilePic} alt="profile" />
+                    className="rounded" src={profilePic} alt="profile" />
                 </div>
             </div>
         </div>

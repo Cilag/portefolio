@@ -43,6 +43,5 @@ export const PROJECTS = [
 
 export const CONTACT = {
   address: "Bordeaux 33000, France",
-  phoneNo: "0660467197",
   email: "ozouxguillaume@gmail.com",
 };
